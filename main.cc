@@ -32,7 +32,7 @@ int main( int argc, char *argv ) {
   dfa_filename = static_cast<string>(argv[1]);
   in_filename = static_cast<string>(argv[2]);
 
-  dfa_scanner.
+  dfa_scanner.OpenFile(dfa_scanner);
   input_scanner.OpenFile(in_filename);
   
   if ( function.compare("simulate") == 0 || function.compare("s") == 0 ) {
@@ -45,4 +45,3 @@ int main( int argc, char *argv ) {
   
   return 0;
 } // int main( )
-
